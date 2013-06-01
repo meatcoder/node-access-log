@@ -1,4 +1,4 @@
-var def_format = ':ip :method :statusCode :url (:deltams)';
+var def_format = ':ip :method :statusCode ":url" (:deltams)';
 var util = require('util');
 
 module.exports = accesslog;
