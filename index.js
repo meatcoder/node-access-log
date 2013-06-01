@@ -1,4 +1,5 @@
 var def_format = ':ip :method :statusCode :url (:deltams)';
+var util = require('util');
 
 module.exports = accesslog;
 
@@ -9,7 +10,7 @@ function accesslog(req, res, format, cb) {
   }
 
   format = format || def_format;
-  cb = cb || console.log;
+  cb = cb || util.log;
 
   var received_date = new Date();
 
