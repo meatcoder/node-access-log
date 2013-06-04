@@ -1,7 +1,9 @@
 access-log
 ==========
 
-Add simple access logs to any http or https server
+Add simple access logs to any http or https server. This version was forked from the original [here](https://github.com/bahamas10/node-access-log). 
+It was modified to make the default log output closer to the typical apache access logs. It also uses `util.log` as opposed to 
+`console.log` for the original.
 
 Usage
 -----
@@ -35,7 +37,7 @@ Customization
 You can pass in a format string, the default is
 
 ```
-:ip :method :statusCode :url (:deltams)
+:ip :method :statusCode ":url" (:deltams)
 ```
 
 - `:method` - The request method (POST|HEAD|GET|DELETE|PUT, etc.)
